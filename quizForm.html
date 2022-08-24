@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronotype Quiz</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/quizStyle.css">
+
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="images/bannerImage.jpg" alt="">
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form" action = '/quiz'>
+                        <h2>Are you a night owl or an early bird?</h2>
+                        <form id="form1">
+                            <div class="form-radio">
+                                
+                                <label for="question1" class="radio-label">1. What time would you get up if you were entirely free to plan your day?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question1" id = "question11" value=5 checked>
+                                    <label for="question11">5:00 - 6:29 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question1" id = "question12" value=4>
+                                    <label for="question12">6:30 – 7:44 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question1" id = "question13" value=3>
+                                    <label for="question13">7:45 – 9:44 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question1" id = "question14" value=2>
+                                    <label for="question14">9:45 – 10:59 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question1" id = "question15" value=1>
+                                    <label for="question15">11:00 – 11:59 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question1" id = "question16" value=0>
+                                    <label for="question16">Midday – 5:00 am</label>
+                                    <span class="check"></span>
+                                </div>
+
+                        
+                                <label for="question2" class="radio-label">2. What time would you go to bed if you were entirely free to plan your evening?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question2" id = "question21" value=5 checked>
+                                    <label for="question21">8:00 – 8:59 pm</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question2" id = "question22" value=4>
+                                    <label for="question22">9:00 – 10:14 pm</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question2" id = "question23" value=3>
+                                    <label for="question23">10:15 pm – 12:29 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question2" id = "question24" value=2>
+                                    <label for="question24">12:30 – 1:44 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question2" id = "question25" value=1>
+                                    <label for="question25">1:45 – 2:59 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question2" id = "question26" value=0>
+                                    <label for="question26">3:00 am – 8:00 pm</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question3" class="radio-label">3. If there is a specific time at which you have to get up in the morning, to what extent do you
+                                    depend on being woken up by an alarm clock?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question3" id = "question31" value=4 checked>
+                                    <label for="question31">Not at all dependent</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question3" id = "question32" value=3>
+                                    <label for="question32">Slightly dependent</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question3" id = "question33" value=2>
+                                    <label for="question33">Fairly dependent</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question3" id = "question34" value=1>
+                                    <label for="question34">Very dependent</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question4" class="radio-label">4. How easy do you find it to get up in the morning (when you are not woken up
+                                    unexpectedly)?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question4" id = "question41" value=1 checked>
+                                    <label for="question41">Not at all easy</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question4" id = "question42" value=2>
+                                    <label for="question42">Not very easy</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question4" id = "question43" value=3>
+                                    <label for="question43">Fairly easy</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question4" id = "question44" value=4>
+                                    <label for="question44">Very easy</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question5" class="radio-label">5. How alert do you feel during the first half hour after you wake up in the morning?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question5" id = "question51" value=1 checked>
+                                    <label for="question51">Not at all alert</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question5" id = "question52" value=2>
+                                    <label for="question52">Slightly alert</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question5" id = "question53" value=3>
+                                    <label for="question53">Fairly alert</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question5" id = "question54" value=4>
+                                    <label for="question54">Very alert</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question6" class="radio-label">6. How hungry do you feel during the first half-hour after you wake up in the morning?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question6" id = "question61" value=1 checked>
+                                    <label for="question61">Not at all hungry</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question6" id = "question62" value=2>
+                                    <label for="question62">Slightly hungry</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question6" id = "question63" value=3>
+                                    <label for="question63">Fairly hungry</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question6" id = "question64" value=4>
+                                    <label for="question64">Very hungry</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question7" class="radio-label">7. During the first half-hour after you wake up in the morning, how tired do you feel?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question7" id = "question71" value=1 checked>
+                                    <label for="question71">Very tired</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question7" id = "question72" value=2>
+                                    <label for="question72">Fairly tired</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question7" id = "question73" value=3>
+                                    <label for="question73">Fairly refreshed</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question7" id = "question74" value=4>
+                                    <label for="question74">Very refreshed</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question8" class="radio-label">8. If you have no commitment the next day, what time would you go to bed compared to your
+                                    usual bedtime?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question8" id = "question81" value=4 checked>
+                                    <label for="question81">Seldom or never later</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question8" id = "question82" value=3>
+                                    <label for="question82">Less than one hour later</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question8" id = "question83" value=2>
+                                    <label for="question83">1-2 hours later</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question8" id = "question84" value=1>
+                                    <label for="question84">More than two hours later</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+
+                                <label for="question9" class="radio-label">9. You have decided to engage in some physical exercise. A friend suggests that you do this
+                                    for one hour twice a week and the best time for him/her is between 7:00 – 8:00 am. Bearing
+                                    in mind nothing but your own internal “clock”, how do you think you would perform?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question9" id = "question91" value=4 checked>
+                                    <label for="question91">Would be in good form</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question9" id = "question92" value=3>
+                                    <label for="question92">Would be in reasonable form</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question9" id = "question93" value=2>
+                                    <label for="question93">Would find it difficult</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question9" id = "question94" value=1>
+                                    <label for="question94">Would find it very difficult</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question10" class="radio-label">10. At what time of day do you feel you become tired as a result of need for sleep?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question10" id = "question101" value=5 checked>
+                                    <label for="question101">8:00 – 8:59 pm</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question10" id = "question102" value=4>
+                                    <label for="question102">9:00 – 10:14 pm</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question10" id = "question103" value=3>
+                                    <label for="question103">10:15 pm – 12:44 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question10" id = "question104" value=2>
+                                    <label for="question104">12:45 – 1:59 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question10" id = "question105" value=1>
+                                    <label for="question105">2:00 – 3:00 am</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question11" class="radio-label">11. You want to be at your peak performance for a test that you know is going to be mentally
+                                    exhausting and will last for two hours. You are entirely free to plan your day. Considering
+                                    only your own internal “clock”, which ONE of the four testing times would you choose?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question11" id = "question111" value=4 checked>
+                                    <label for="question111">8:00 – 10:00 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question11" id = "question112" value=3>
+                                    <label for="question112">11:00 am – 1:00 pm</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question11" id = "question113" value=2>
+                                    <label for="question113">3:00 – 5:00 pm</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question11" id = "question114" value=1>
+                                    <label for="question114">7:00 – 9:00 pm</label>
+                                    <span class="check"></span>
+                                </div>
+                                
+
+                                <label for="question12" class="radio-label">12. If you got into bed at 11:00 pm, how tired would you be?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question12" id = "question121" value=1 checked>
+                                    <label for="question121">Not at all tired</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question12" id = "question122" value=2>
+                                    <label for="question122">A little tired</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question12" id = "question123" value=3>
+                                    <label for="question123">Fairly tired</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question12" id = "question124" value=4>
+                                    <label for="question124">Very tired</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question13" class="radio-label">13. For some reason, you have gone to bed several hours later than usual, but there is no
+                                    need to get up at any particular time the next morning. Which ONE of the following are you
+                                    most likely to do?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question13" id = "question131" value=4 checked>
+                                    <label for="question131">Will wake up at usual time, but will NOT fall back asleep</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question13" id = "question132" value=3>
+                                    <label for="question132">Will wake up at usual time and will doze thereafter</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question13" id = "question133" value=2>
+                                    <label for="question133">Will wake up at usual time but will fall asleep again</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question13" id = "question134" value=1>
+                                    <label for="question134">Will NOT wake up until later than usual</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question14" class="radio-label">14. One night you have to remain awake between 4:00 – 6:00 am in order to carry out a night
+                                    watch. You have no commitments the next day. Which ONE of the alternatives will suite
+                                    you best?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question14" id = "question141" value=1 checked>
+                                    <label for="question141">Would NOT go to bed until watch was over</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question14" id = "question142" value=2>
+                                    <label for="question142">Would take a nap before and sleep after</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question14" id = "question143" value=3>
+                                    <label for="question143">Would take a good sleep before and nap after</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question14" id = "question144" value=4>
+                                    <label for="question144">Would sleep only before watch</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question15" class="radio-label">15. You have to do two hours of hard physical work. You are entirely free to plan your day and
+                                    considering only your own internal “clock” which ONE of the following times would you
+                                    choose?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question15" id = "question151" value=4 checked>
+                                    <label for="question151">8:00 – 10:00 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question15" id = "question152" value=3>
+                                    <label for="question152">11:00 am – 1:00 pm</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question15" id = "question153" value=2>
+                                    <label for="question153">3:00 – 5:00 pm</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question15" id = "question154" value=1>
+                                    <label for="question154">7:00 – 9:00 pm</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question16" class="radio-label">16. You have decided to engage in hard physical exercise. A friend suggests that you do this
+                                    for one hour twice a week and the best time for him/her is between 10:00 – 11:00 pm.
+                                    Bearing in mind nothing else but your own internal “clock”, how well do you think you
+                                    would perform?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question16" id = "question161" value=4 checked>
+                                    <label for="question161">Would be in good form</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question16" id = "question162" value=3>
+                                    <label for="question162">Would be in reasonable form</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question16" id = "question163" value=2>
+                                    <label for="question163">Would find it difficult</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question16" id = "question164" value=1>
+                                    <label for="question164">Would find it very difficult</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question17" class="radio-label">17. Suppose that you can choose your school hours. Assume that you went to school for five
+                                    hours per day and that school was interesting and enjoyable. Which five consecutive
+                                    hours would you select?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question17" id = "question171" value=5 checked>
+                                    <label for="question171">5 hours starting between 4:00 – 7:59 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question17" id = "question172" value=4>
+                                    <label for="question172">5 hours starting between 8:00 – 8:59 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question17" id = "question173" value=3>
+                                    <label for="question173">5 hours starting between 9:00 am – 1:59 pm</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question17" id = "question174" value=2>
+                                    <label for="question174">5 hours starting between 2:00 – 4:59 pm</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question17" id = "question175" value=1>
+                                    <label for="question175">5 hours starting between 5:00 pm – 3:59 am</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question18" class="radio-label">18. At what time of the day do you think that you reach your “feeling best” peak?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question18" id = "question181" value=5 checked>
+                                    <label for="question181">5:00 – 7:59 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question18" id = "question182" value=4>
+                                    <label for="question182">8:00 – 9:59 am</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question18" id = "question183" value=3>
+                                    <label for="question183">10:00 am – 4:59 pm</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question18" id = "question184" value=2>
+                                    <label for="question184">5:00 – 9:59 pm</label>
+                                    <span class="check"></span>
+                                </div>
+
+
+                                <label for="question19" class="radio-label">19. One hears about “morning” and “evening” types of people. Which ONE of these types do
+                                    you consider yourself to be?</label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question19" id = "question191" value=6 checked>
+                                    <label for="question191">Definitely a “morning” type</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question19" id = "question192" value=4>
+                                    <label for="question192">Rather more a “morning” type than an “evening” type</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question19" id = "question193" value=2>
+                                    <label for="question193">Rather more an “evening” type than a “morning” type</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="question19" id = "question194" value=0>
+                                    <label for="question194">Definitely an “evening” type</label>
+                                    <span class="check"></span>
+                                </div>
+                            </div>
+                            <div class="form-submit">
+                                <input type="reset" value="Reset All" class="submit" name="reset" id="reset" />
+                                <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+                            </div>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
